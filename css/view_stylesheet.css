@@ -1,0 +1,13 @@
+#wrap {
+    width:800px;
+    margin:0 auto;
+}
+#left_col {
+    float:left;
+    width:550px;
+}
+#control_col {
+    text-align: center;
+    float:right;
+    width:250px;
+}

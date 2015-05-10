@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cellular Automata</title>
+    <link rel="stylesheet" type="text/css" href="css/view_stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/ViewController.js"></script>
+    <script src="js/Grid.js"></script>
+    <script src="js/Cell.js"></script>
+    <script src="js/jCanvas.js"></script>
+</head>
+<body>
+    <div id="wrap">
+            <div id="left_col">
+            <canvas id="myCanvas" width="550" height="500" style="border:1px solid #000000;">
+
+            </canvas>
+        </div>
+        <div id="control_col">
+            <form>
+                Rows:<br>
+                <input type="number" name="row">
+                <br>
+                Columns:<br>
+                <input type="number" name="col">
+            </form><br>
+            <button name="update_btn" onclick="modifyGrid();">Update Dimensions</button>
+            <br>
+            <button name="start_btn" onclick="startAnimations();">Start Animations</button>
+            <br>
+            <button name="update_btn" onclick="modifyGrid();">Update Dimensions</button>
+        </div>
+    </div>
+</body>
+</html>
