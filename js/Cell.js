@@ -1,26 +1,22 @@
 /**
  * Created by kevin on 5/9/15.
  *
- *
  */
 
 function Cell(){
+    this.neighbors;
     this.type;
-    this.drawableCell = new DrawableCell();
-    this.setType = function(type){
-        this.type = type;
-    }
+}
+
+/**
+ * Used by algorithm to change cell type and render graphics
+ *
+ * @param type
+ */
+Cell.prototype.setType = function(type){
+    this.type = type;
+    // TODO: write code to render graphics from xml file to view
 }
 
 
-function DrawableCell(shape){
-    this.fill;
-    this.x;
-    this.y;
-    this.sides;
-    this.rotation;
-    this.shape = shape;
-    this.draw = function(){
-        $('canvas').drawPolygon();
-    }
-}
+

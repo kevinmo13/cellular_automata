@@ -9,11 +9,10 @@
     <script src="js/ViewController.js"></script>
     <script src="js/Grid.js"></script>
     <script src="js/Cell.js"></script>
-    <script src="js/jCanvas.js"></script>
 </head>
 <body>
     <div id="wrap">
-            <div id="left_col">
+        <div id="canvas_col">
             <canvas id="myCanvas" width="550" height="500" style="border:1px solid #000000;">
 
             </canvas>
@@ -21,15 +20,11 @@
         <div id="control_col">
             <form>
                 Rows:<br>
-                <input type="number" name="row">
+                <input name="row" value="20">
                 <br>
                 Columns:<br>
-                <input type="number" name="col">
+                <input name="col" value="20">
             </form><br>
-            <button name="update_btn" onclick="modifyGrid();">Update Dimensions</button>
-            <br>
-            <button name="start_btn" onclick="startAnimations();">Start Animations</button>
-            <br>
             <button name="update_btn" onclick="modifyGrid();">Update Dimensions</button>
         </div>
     </div>

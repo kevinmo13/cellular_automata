@@ -3,19 +3,31 @@
  *
  * Main controller that interacts with the view. Defines all event functions from user interaction.
  */
-var grid = new Grid(document.getElementsByName("row"), document.getElementsByName("col"));
+var simulation = new Simulation();
 
 $(document).ready(function(){
-    grid.resizeGrid();
+    simulation.grid.setGridDimensions(document.getElementsByName("row"), document.getElementsByName("col"));
 });
 
 function modifyGrid(){
-    grid.setGridDimensions(document.getElementsByName("row"), document.getElementsByName("col"));
+    simulation.grid.setGridDimensions(document.getElementsByName("row"), document.getElementsByName("col"));
     alert('Alert using jQuery Function!');
 
 }
 
 // TODO:
 function startAnimations(){
+    run();
+}
+
+// TODO:
+function pauseAnimations(){
 
 }
+
+// TODO:
+function run(){
+    simulation.grid.updateGrid();
+}
+
+

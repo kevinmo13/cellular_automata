@@ -5,36 +5,70 @@
  */
 
 
-function Grid(row, col){
-    this.row = row;
-    this.col = col;
-    this.array2D = [];
+function Grid(){
+    this.row;
+    this.col;
+    var array2D = [];
 
-    this.setGridDimensions = function(row, col){
-        this.row = row;
-        this.col = col;
-    }
-
-    // TODO: make more efficient
-    this.resizeGrid = function(){
+    function resizeGrid(){
         for(var i = 0; i < this.row; i++){
-            this.array2D[i] = [];
+            array2D[i] = [];
             for(var j = 0; j < this.col; j++){
-                this.array2D[i][j] = new Cell();
-                this.array2D[i][j].drawableCell.draw();
+                array2D[i][j] = new Cell();
             }
         }
     }
 
-    // TODO: implement
-    this.moveCell = function(){
-
+    this.setCellInGrid = function(row, col, type){
+        array2D[row][col].setType(type);
     }
 
-
-
-
-
+    this.getCellInGrid = function(row, col){
+        return array2D[row][col];
+    }
 }
+
+/**
+ * Used by ViewController to change size when user changes dimensions
+ *
+ * @param row
+ * @param col
+ */
+Grid.prototype.setGridDimensions = function(row, col) {
+    this.row = row;
+    this.col = col;
+    resizeGrid();
+}
+
+/**
+ * Used by algorithm to pass back 2D array of cell types. Param of type String[][].
+ *
+ * @param cellGrid
+ */
+Grid.prototype.updateGrid = function(cellGrid){
+    for(var i = 0; i < this.row; i++){
+        for(var j = 0; j < this.col; j++){
+            this.setCellInGrid(i, j, cellGrid[i][j])
+        }
+    }
+}
+
+
+/**
+ * Given to Algorithm to as String[][] so that it can run simulations
+ *
+ * @returns {Array}
+ */
+Grid.prototype.getCellTypeGrid = function(){
+    var cellGrid = [];
+    for(var i = 0; i < this.row; i++){
+        cellGrid[i] = [];
+        for(var j = 0; j < this.col; j++){
+            cellGrid[i][j] = this.getCellInGrid[i][j].type;
+        }
+    }
+    return cellGrid;
+}
+
 
 
