@@ -15,16 +15,14 @@ function Grid(){
         var width = Number(document.getElementById('myCanvas').getAttribute('width'));
         console.log('grid height: ' + height + ' , grid width: ' + width);
         for(var i = 0; i < this.row; i++){
-
             array2D[i] = [];
             this.cellLocations[i] = [];
             for(var j = 0; j < this.col; j++){
                 array2D[i][j] = new Cell();
                 this.cellLocations[i][j] = calculateLocationOfCell(i,j, height, width);
+//                console.log(this.cellLocations[i][j]);
             }
         }
-        console.log('hi');
-
     }
 
     this.setCellInGrid = function(row, col, type){
@@ -46,7 +44,6 @@ Grid.prototype.setGridDimensions = function(row, col) {
     this.row = row;
     this.col = col;
     this.resizeGrid();
-    console.log('grid set. grid size: ' + this.cellLocations.size);
 }
 
 /**
@@ -84,11 +81,16 @@ Grid.prototype.getCellTypeGrid = function(){
 Grid.prototype.renderGrid = function(){
     var c = document.getElementById('myCanvas');
     var canvasContext = c.getContext('2d');
+
     for(var i = 0; i < this.row; i++){
         for(var j = 0; j < this.col; j++){
-            canvasContext.drawImage(this.getCellInGrid(i, j).getImage(),
+            var img = new Image;
+            img.src = this.getCellInGrid(i, j).getImage();
+            console.log(this.cellLocations[i][j][0]);
+            canvasContext.drawImage(img ,
                 this.cellLocations[i][j][0],
                 this.cellLocations[i][j][1]);
+            console.log('Cell at: ' + i +' ' + j + ' has been rendered')
         }
     }
 }

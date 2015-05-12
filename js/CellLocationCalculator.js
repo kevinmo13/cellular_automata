@@ -13,7 +13,8 @@
  */
 function calculateLocationOfCell(row, col, height, width){
     var location = [];
-    location[0] = (col/width/2)*col; //calculates x
-    location[1] = (row/height/2)*row; // calculates y
+    location[0] = (width/(col+1)/2); //calculates x
+    location[1] = (height/(row+1)/2); // calculates y
+    console.log('Cell at row '  + row + ' col ' + col + ' is located at ' + location[0] + ' ' + location[1]);
     return location;
 }

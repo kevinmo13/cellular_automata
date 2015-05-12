@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2535537f-d355-4056-9cfc-e761b355434f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/CellLocationCalculator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fish.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Algorithm.js" afterPath="$PROJECT_DIR$/js/Algorithm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Cell.js" afterPath="$PROJECT_DIR$/js/Cell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/CellLocationCalculator.js" afterPath="$PROJECT_DIR$/js/CellLocationCalculator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Grid.js" afterPath="$PROJECT_DIR$/js/Grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Simulation.js" afterPath="$PROJECT_DIR$/js/Simulation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ViewController.js" afterPath="$PROJECT_DIR$/js/ViewController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.html" afterPath="$PROJECT_DIR$/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,8 +33,8 @@
           <file leaf-file-name="Grid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/Grid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17821783">
-                  <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.28712872">
+                  <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -47,7 +44,7 @@
             <entry file="file://$PROJECT_DIR$/js/Cell.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+                  <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -57,17 +54,17 @@
             <entry file="file://$PROJECT_DIR$/js/ViewController.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fish.svg" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/img/fish.svg">
+          <file leaf-file-name="CellLocationCalculator.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/CellLocationCalculator.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+                  <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -80,8 +77,8 @@
           <file leaf-file-name="view.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.2014389">
-                  <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+                <state vertical-scroll-proportion="0.7410072">
+                  <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
                   <folding>
                     <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -93,7 +90,7 @@
             <entry file="file://$PROJECT_DIR$/js/Simulation.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+                  <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
                   <folding>
                     <element signature="n#!!doc;n#Simulation#0" expanded="false" />
                   </folding>
@@ -105,7 +102,7 @@
             <entry file="file://$PROJECT_DIR$/js/Algorithm.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="5" />
+                  <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
                   <folding>
                     <element signature="n#!!doc;n#Algorithm#0" expanded="false" />
                   </folding>
@@ -136,11 +133,11 @@
         <option value="$PROJECT_DIR$/js/fish.svg" />
         <option value="$PROJECT_DIR$/js/Algorithm.js" />
         <option value="$PROJECT_DIR$/js/Simulation.js" />
-        <option value="$PROJECT_DIR$/js/Cell.js" />
-        <option value="$PROJECT_DIR$/view.html" />
         <option value="$PROJECT_DIR$/img/fish.svg" />
-        <option value="$PROJECT_DIR$/js/CellLocationCalculator.js" />
         <option value="$PROJECT_DIR$/js/ViewController.js" />
+        <option value="$PROJECT_DIR$/js/Cell.js" />
+        <option value="$PROJECT_DIR$/js/CellLocationCalculator.js" />
+        <option value="$PROJECT_DIR$/view.html" />
         <option value="$PROJECT_DIR$/js/Grid.js" />
       </list>
     </option>
@@ -568,17 +565,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/CellLocationCalculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41584158">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/fish.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.23762377">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
@@ -587,7 +576,7 @@
     <entry file="file://$PROJECT_DIR$/js/Simulation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc;n#Simulation#0" expanded="false" />
           </folding>
@@ -597,43 +586,51 @@
     <entry file="file://$PROJECT_DIR$/js/Algorithm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="5" />
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc;n#Algorithm#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view.html">
+    <entry file="file://$PROJECT_DIR$/js/Cell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2014389">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ViewController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Cell.js">
+    <entry file="file://$PROJECT_DIR$/js/CellLocationCalculator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7410072">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17821783">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.28712872">
+          <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -19,9 +19,8 @@ Cell.prototype.setType = function(type){
 }
 
 Cell.prototype.getImage = function(){
-    var img = new Image;
-    img.src = "js/fish.svg"; // TODO: replace with dynamically found file;
-    return img;
+    // TODO: replace with dynamically found file;
+    return 'img/fish.svg';
 }
 
 

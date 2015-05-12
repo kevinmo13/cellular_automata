@@ -9,13 +9,12 @@ $(document).ready(function(){
 var simulation;
 
 function modifyGrid(){
-    simulation.grid.setGridDimensions(document.getElementsByName("row"), document.getElementsByName("col"));
+    simulation.grid.setGridDimensions(Number(document.getElementById("row").value), Number(document.getElementById("col").value));
 }
 
 function createSimulation(){
     simulation = new Simulation("GameOfLife");
-
-    simulation.grid.setGridDimensions(document.getElementsByName("row"), document.getElementsByName("col"));
+    simulation.grid.setGridDimensions(Number(document.getElementById("row").value), Number(document.getElementById("col").value));
     simulation.grid.renderGrid();
 }
 
