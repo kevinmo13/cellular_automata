@@ -9,13 +9,19 @@ function Cell(){
 }
 
 /**
- * Used by algorithm to change cell type and render graphics
+ * Used by algorithm to change cell type and renderGrid graphics
  *
  * @param type
  */
 Cell.prototype.setType = function(type){
     this.type = type;
-    // TODO: write code to render graphics from xml file to view
+    // TODO: write code to renderGrid graphics from xml file to view
+}
+
+Cell.prototype.getImage = function(){
+    var img = new Image;
+    img.src = "js/fish.svg"; // TODO: replace with dynamically found file;
+    return img;
 }
 
 

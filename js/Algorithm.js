@@ -4,7 +4,11 @@
 
 
 function Algorithm(){
+    var algorithmRules;
 
+    this.setRules = function(rules){
+        algorithmRules = rules;
+    }
 }
 
 
@@ -16,5 +20,4 @@ function Algorithm(){
 Algorithm.prototype.run = function(grid){
     grid.getCellTypeGrid();
 
-    grid.set
 }

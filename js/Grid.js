@@ -4,26 +4,34 @@
  *
  */
 
-
 function Grid(){
     this.row;
     this.col;
     var array2D = [];
+    this.cellLocations = [];
 
-    function resizeGrid(){
+    this.resizeGrid = function(){
+        var height = Number(document.getElementById('myCanvas').getAttribute('height'));
+        var width = Number(document.getElementById('myCanvas').getAttribute('width'));
+        console.log('grid height: ' + height + ' , grid width: ' + width);
         for(var i = 0; i < this.row; i++){
+
             array2D[i] = [];
+            this.cellLocations[i] = [];
             for(var j = 0; j < this.col; j++){
                 array2D[i][j] = new Cell();
+                this.cellLocations[i][j] = calculateLocationOfCell(i,j, height, width);
             }
         }
+        console.log('hi');
+
     }
 
     this.setCellInGrid = function(row, col, type){
         array2D[row][col].setType(type);
     }
 
-    this.getCellInGrid = function(row, col){
+    this.getCellInGrid = function(row, col) {
         return array2D[row][col];
     }
 }
@@ -37,7 +45,8 @@ function Grid(){
 Grid.prototype.setGridDimensions = function(row, col) {
     this.row = row;
     this.col = col;
-    resizeGrid();
+    this.resizeGrid();
+    console.log('grid set. grid size: ' + this.cellLocations.size);
 }
 
 /**
@@ -52,7 +61,6 @@ Grid.prototype.updateGrid = function(cellGrid){
         }
     }
 }
-
 
 /**
  * Given to Algorithm to as String[][] so that it can run simulations
@@ -70,5 +78,18 @@ Grid.prototype.getCellTypeGrid = function(){
     return cellGrid;
 }
 
-
+/**
+ * Called by Simulation to set up grid
+ */
+Grid.prototype.renderGrid = function(){
+    var c = document.getElementById('myCanvas');
+    var canvasContext = c.getContext('2d');
+    for(var i = 0; i < this.row; i++){
+        for(var j = 0; j < this.col; j++){
+            canvasContext.drawImage(this.getCellInGrid(i, j).getImage(),
+                this.cellLocations[i][j][0],
+                this.cellLocations[i][j][1]);
+        }
+    }
+}
 
