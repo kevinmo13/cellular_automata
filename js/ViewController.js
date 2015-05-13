@@ -25,7 +25,7 @@ function startAnimations(){
 
 // TODO:
 function pauseAnimations(){
-
+    getDefaultCellType("WaTor");
 }
 
 // TODO:

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Simulations>
+    <WaTor>
+        <CellType>
+            <Sea>"Default"</Sea>
+            <Fish>""</Fish>
+            <Shark>""</Shark>
+        </CellType>
+    </WaTor>
+    <GameOfLife>
+        <CellType>
+            <Alive>""</Alive>
+            <Dead>"Default"</Dead>
+        </CellType>
+    </GameOfLife>
+    <Segregation>
+        <CellType>
+
+        </CellType>
+    </Segregation>
+</Simulations>
+
+

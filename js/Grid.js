@@ -86,13 +86,13 @@ Grid.prototype.renderGrid = function(){
         for(var j = 0; j < this.col; j++){
             var img = new Image;
             img.src = this.getCellInGrid(i, j).getImage();
-            console.log(this.cellLocations[i][j][0]);
+    //        console.log(this.cellLocations[i][j][0]);
             canvasContext.drawImage(img ,
                 this.cellLocations[i][j][0],
                 this.cellLocations[i][j][1],
                 calculateCellSize(this.row, this.col, this.height, this.width)[0],
                 calculateCellSize(this.row, this.col, this.height, this.width)[1]);
-            console.log('Cell at: ' + i +' ' + j + ' has been rendered')
+    //        console.log('Cell at: ' + i +' ' + j + ' has been rendered')
         }
     }
 }
