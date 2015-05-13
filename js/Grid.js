@@ -7,20 +7,20 @@
 function Grid(){
     this.row;
     this.col;
+    this.height = Number(document.getElementById('myCanvas').getAttribute('height'));
+    this.width = Number(document.getElementById('myCanvas').getAttribute('width'));
     var array2D = [];
     this.cellLocations = [];
 
     this.resizeGrid = function(){
-        var height = Number(document.getElementById('myCanvas').getAttribute('height'));
-        var width = Number(document.getElementById('myCanvas').getAttribute('width'));
-        console.log('grid height: ' + height + ' , grid width: ' + width);
+
+        console.log('grid height: ' + this.height + ' , grid width: ' + this.width);
         for(var i = 0; i < this.row; i++){
             array2D[i] = [];
             this.cellLocations[i] = [];
             for(var j = 0; j < this.col; j++){
                 array2D[i][j] = new Cell();
-                this.cellLocations[i][j] = calculateLocationOfCell(i,j, height, width);
-//                console.log(this.cellLocations[i][j]);
+                this.cellLocations[i][j] = calculateLocationOfCell(i,j, this.height, this.width, this.row, this.col);
             }
         }
     }
@@ -89,7 +89,9 @@ Grid.prototype.renderGrid = function(){
             console.log(this.cellLocations[i][j][0]);
             canvasContext.drawImage(img ,
                 this.cellLocations[i][j][0],
-                this.cellLocations[i][j][1]);
+                this.cellLocations[i][j][1],
+                calculateCellSize(this.row, this.col, this.height, this.width)[0],
+                calculateCellSize(this.row, this.col, this.height, this.width)[1]);
             console.log('Cell at: ' + i +' ' + j + ' has been rendered')
         }
     }

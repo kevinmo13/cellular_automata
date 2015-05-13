@@ -11,10 +11,18 @@
  * @param width
  * @returns {Array}
  */
-function calculateLocationOfCell(row, col, height, width){
+function calculateLocationOfCell(row, col, height, width, numRow, numCol){
     var location = [];
-    location[0] = (width/(col+1)/2); //calculates x
-    location[1] = (height/(row+1)/2); // calculates y
+    location[0] = width/numCol * col; //calculates x
+    location[1] = height/numRow * row; // calculates y
     console.log('Cell at row '  + row + ' col ' + col + ' is located at ' + location[0] + ' ' + location[1]);
     return location;
 }
+
+function calculateCellSize(numRow, numCol, height, width){
+    var dimensions = [];
+    dimensions[0] = width/numCol;
+    dimensions[1] = height/numRow;
+    return dimensions;
+}
+
